@@ -1,118 +1,159 @@
-# Banking System
+<div align="center">
 
-A console-based Bank Account Management System developed in C as part of the CodeAlpha C Programming Internship.
+# 🏦 Banking System in C
 
-## Features
+### A Console-Based Banking Application
 
-* Account creation on first run
-* Deposit money
-* Withdraw money
-* Balance enquiry
-* Insufficient balance protection
-* Validation for invalid transaction amounts
-* Persistent account data using file handling
-* Menu-driven console interface
+A C programming project that simulates basic banking operations, with transaction validation and file-based data persistence.
 
-## Account Information
+![Language](https://img.shields.io/badge/Language-C-A8B9CC?style=for-the-badge\&logo=c\&logoColor=white)
+![Compiler](https://img.shields.io/badge/Compiler-GCC-6C8EBF?style=for-the-badge\&logo=gnu\&logoColor=white)
+![Project Type](https://img.shields.io/badge/Project-Console_Application-8A63D2?style=for-the-badge)
 
-The system stores:
+</div>
 
-* Account Number
-* Account Holder Name
-* Account Balance
+---
 
-## Technologies Used
+## 📌 About the Project
 
-* C Programming
-* Structures
-* Functions
-* File Handling
-* Binary File Storage
-* GCC Compiler
+The **Banking System** is a menu-driven C application that simulates essential banking transactions through a console interface.
 
-## Banking Operations
+Users can deposit money, withdraw funds, and check their account balance. The application also demonstrates transaction validation and file handling to preserve account information between program sessions.
 
-### Deposit
+This project applies fundamental C programming concepts to a practical financial simulation.
 
-Allows the user to add money to the account.
+> **Disclaimer:** This project is intended for educational purposes only. It is not a real banking application and should not be used to store or manage actual financial information.
 
-The program rejects zero or negative deposit amounts.
+---
 
-### Withdraw
+## ✨ Features
 
-Allows the user to withdraw money from the account.
+* 💰 **Deposit:** Add money to the account.
+* 💸 **Withdrawal:** Withdraw funds while checking the available balance.
+* 📊 **Balance Enquiry:** View the current account balance.
+* 🛡️ **Transaction Validation:** Reject invalid transaction amounts.
+* ⚖️ **Insufficient Balance Protection:** Prevent withdrawals that exceed available funds.
+* 💾 **File-Based Persistence:** Preserve account information between sessions.
 
-The program:
+---
 
-* Rejects zero or negative withdrawal amounts
-* Prevents withdrawals greater than the available balance
+## 🧠 Concepts Demonstrated
 
-### Balance Enquiry
+| Concept                | Application                                       |
+| :--------------------- | :------------------------------------------------ |
+| Functions              | Organize banking operations into manageable units |
+| Conditional statements | Control transaction logic                         |
+| Loops                  | Support repeated menu interactions                |
+| Input validation       | Check transaction amounts                         |
+| File handling          | Save and retrieve account information             |
+| Arithmetic operations  | Calculate deposits, withdrawals, and balances     |
 
-Displays:
+---
 
-* Account Number
-* Account Holder Name
-* Current Balance
+## 🛠️ Technology Stack
 
-## File Handling
+* **Language:** C
+* **Compiler:** GCC
+* **Interface:** Command-line / console
+* **Data storage:** File-based persistence
 
-Account information is stored in:
+---
 
-`account.dat`
+## ⚙️ Getting Started
 
-The program automatically saves account information after transactions and loads the saved account when the program starts.
+### Prerequisites
 
-This allows the balance to persist even after the program is closed and restarted.
+* GCC compiler installed and available in your terminal.
+* Git installed to clone the repository.
 
-## How to Run
+### 1. Clone the repository
 
-Compile the program:
-
-```bash
-gcc banking_system.c -o banking_system
+```bash id="1g0qrf"
+git clone https://github.com/ballsohini939-alt/banking-system-c.git
 ```
 
-Run the program:
+### 2. Enter the project directory
 
-```bash
-./banking_system
+```bash id="cn8v9v"
+cd banking-system-c
 ```
 
-On Windows PowerShell:
+### 3. Compile the program
 
-```powershell
+If the source file is named `banking_system.c`, run:
+
+```bash id="v5qcnq"
+gcc banking_system.c -o banking_system.exe
+```
+
+### 4. Run the program
+
+In Windows PowerShell:
+
+```powershell id="xv7ckj"
 .\banking_system.exe
 ```
 
-## Menu
+**Note:** If your source file has a different name, replace `banking_system.c` with the actual filename in the compilation command.
 
-```text
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
+---
 
-1. Deposit
-2. Withdraw
-3. Balance Enquiry
-4. Exit
-```
+## 🔐 Transaction Validation
 
-## Project Structure
+The application demonstrates basic safeguards for simulated banking transactions, including:
 
-```text
-CodeAlpha_BankingSystem/
-│
-├── banking_system.c
-├── account.dat
-├── README.md
-└── .gitignore
-```
+* Rejecting invalid transaction amounts.
+* Preventing withdrawals that exceed the available balance.
+* Updating the balance after successful transactions.
 
-## Internship Task
+These checks demonstrate basic application logic. They do not provide the security, authentication, audit logging, or financial safeguards required by real banking systems.
 
-This project was developed as **Task 4** of the CodeAlpha C Programming Internship.
+---
 
-## Author
+## 💾 Data Persistence
+
+The program uses file handling to preserve account information between sessions.
+
+Keep the generated account data file if you want to retain the saved information. Avoid deleting or overwriting it unintentionally.
+
+---
+
+## 🧪 What This Project Helps Practice
+
+* Building interactive, menu-driven applications.
+* Implementing transaction-related logic.
+* Validating user input.
+* Working with file-based data persistence.
+* Testing edge cases, such as invalid amounts and insufficient funds.
+* Organizing C code into manageable functions.
+
+---
+
+## 🚀 Future Improvements
+
+Potential enhancements include:
+
+* Supporting multiple customer accounts.
+* Adding transaction history.
+* Implementing account authentication.
+* Improving error handling and input validation.
+* Adding transaction summaries and reports.
+
+---
+
+## 👩‍💻 Author
 
 **Sohini Ball**
+B.Tech Computer Science and Engineering Student
 
-B.Tech Computer Science & Engineering Student
+Interested in software development, problem-solving, and building practical applications.
+
+**GitHub:** [@ballsohini939-alt](https://github.com/ballsohini939-alt)
+
+---
+
+<div align="center">
+
+*Learn · Build · Test · Improve*
+
+</div>
